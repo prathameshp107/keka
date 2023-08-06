@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload XLSX File</title>
+  <link rel="stylesheet" href="/css/upload.css">
+</head>
+
+<body>
+  <div class="upload-container">
+    <div class="upload-icon">&#128206;</div>
+    <div class="upload-text">Upload your XLSX file</div>
+    <div class="file-name" id="file-name"></div>
+    <div class="upload-btn-wrapper">
+      <form id="upload-form" method="POST" action="/upload" enctype="multipart/form-data">
+        <button class="btn btn-browse" type="button">Browse...</button>
+        <input type="file" name="upload" accept=".xlsx" style="display: none;">
+        <br>
+        <button class="btn btn-upload" type="submit">Upload</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/js/upload.js"></script>
+</body>
+
+</html>

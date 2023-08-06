@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="/css/register.css">
+  <script src="/js/register-validation.js"></script>
+</head>
+<body>
+  <div class="register-container">
+    <div class="register-content">
+      <div class="register-header">
+        <h1>Create an Account</h1>
+      </div>
+      <form method="POST" action="/register" class="register-form">
+        <div class="input-container">
+          <i class="fas fa-user"></i>
+          <input type="text" name="username" placeholder="Username" class="input-field">
+        </div>
+        <div class="input-container">
+          <i class="fas fa-envelope"></i>
+          <input type="email" name="email" placeholder="Email" class="input-field">
+        </div>
+        <div class="input-container">
+          <i class="fas fa-lock"></i>
+          <input type="password" name="password" placeholder="Password" class="input-field">
+        </div>
+        <div class="input-container">
+          <i class="fas fa-lock"></i>
+          <input type="password" name="confirm_password" placeholder="Confirm Password" class="input-field">
+        </div>
+        <button type="submit" class="register-button">Register</button>
+      </form>
+      <p class="login-link">Already have an account? <a href="/login">Log in</a></p>
+    </div>
+  </div>
+</body>
+</html>
